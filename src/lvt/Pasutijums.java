@@ -71,7 +71,7 @@ public class Pasutijums {
 		}
 	}
 	private static void saglaba(String virkne) throws IOException {
-		FileWriter fr = new FileWriter("orderList.txt"); 
+		FileWriter fr = new FileWriter("orderList.txt", true); 
 		try (BufferedWriter raksta = new BufferedWriter(fr)) {
 			raksta.write(virkne);
 		}
