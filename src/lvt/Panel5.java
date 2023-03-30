@@ -47,7 +47,9 @@ public class Panel5 implements ActionListener {
 			
 		}
 		else {
+			if(Pasutijums.order.isEmpty() != true) {
 			PaswordPane pas = new PaswordPane();
+			}
 		}
 		
 	}
