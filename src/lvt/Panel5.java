@@ -25,25 +25,26 @@ public class Panel5 implements ActionListener {
 		if(e.getSource() == b1) {
 			if (AparatsFrame.f.isAncestorOf(Panel4.p)) {
 				String pica = (String) Panel4.c1.getSelectedItem();
-				System.out.println("pica: "+pica);
+				//System.out.println("pica: "+pica);
 				String izmers = (String) Panel4.c2.getSelectedItem();
-				System.out.println("izmers: "+izmers);
-				if (pica !="") {
+				//System.out.println("izmers: "+izmers);
+				if (pica !="" && izmers != "") {
 					Pasutijums.pievieno(pica, izmers, 5.00);
 					Pasutijums.Cena1(5.0);
 				}
 			}
 			else {
 				String drink = (String) Panel6.c1.getSelectedItem();
-				System.out.println("drink: "+drink);
+				//System.out.println("drink: "+drink);
 				String izmers = (String) Panel6.c2.getSelectedItem();
-				System.out.println("izmers: "+izmers);
-				if (drink !="") {
+				//System.out.println("izmers: "+izmers);
+				if (drink !="" && izmers != "") {
 					Pasutijums.pievieno(drink, izmers, 3.0);
 					Pasutijums.Cena1(3.0);
 				}
 				
 			}
+			
 		}
 		else {
 			PaswordPane pas = new PaswordPane();
